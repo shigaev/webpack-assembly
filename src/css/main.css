@@ -1,0 +1,28 @@
+@import "~normalize.css";
+@import "fonts.css";
+
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.concept {
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 14px;
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: 0 2px 7px #0000003b;
+}
+
+.concept h2 {
+    color: blueviolet;
+}
+
+.bg-image {
+    background: url("../assets/img/image_1.jpg") center center no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 300px;
+}

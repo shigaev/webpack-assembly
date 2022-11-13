@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn webpack 2022</title>
+</head>
+
+<body>
+    <div class="container">
+        <a href="/about.html">About</a>
+        <div class="foot-menu"></div>
+        <div class="concept">
+            <h2>Конфигурация:</h2>
+            <p>
+                <b>Кофигурация</b> - это настройка вебпака, которая говорит откуда файл брать, куда его положить и как
+                преобразовать, если это необхдимо.
+            </p>
+        </div>
+        <div class="concept">
+            <h2>Точка входа:</h2>
+            <p>Вебпак строит граф зависимостей.</p>
+            <p>Он проходится по всем импортам в файлах, строит граф и загружает их в финальный файл сборки.</p>
+            <p>
+                <b>Входная точка</b> - файл, с которого вебпак начинает построение графа. Этот файл нужно включить
+                первым,
+                от него будут идти все импорты. Обычно это index.js
+            </p>
+        </div>
+        <div class="concept">
+            <h2>Точка выхода:</h2>
+            <p>Вебпак отдает нам один файл, этот файл и является точкой выхода. Обычно находится в папке dist</p>
+        </div>
+        <div class="concept">
+            <h2>Лоадеры:</h2>
+            <p>
+                Вебпак понимает только JavaScript и JSON. Если мы попытаемся запихнуть внутрь другие типы файлов (html,
+                css,
+                png, jpg, typescript и т.д.) то вебпак выдаст ошибку.</p>
+            <p>Для того чтобы такого не происходило и придуманы лоадеры.</p>
+            <p>
+                <b>Лоадеры</b> - это специальные модули, для того чтобы считывать и обрабатывать файлы.
+                Для них в свою очередь придуманы <b>парвила</b>
+            </p>
+            <p>
+                <b>Правила:</b> - это в свою очередь объекты в кофигурации, которые указывают на файл, который нужно
+                обработать и указывают лоадер, которым этот файл нужно обработать.
+            </p>
+        </div>
+        <div class="concept">
+            <h2>Плагины:</h2>
+            <p>
+                Лоадеры просто обрабатывают файлы, а <b>плагины</b> используются для того чтобы управлять не только
+                импортами в JS.
+            </p>
+            <p>
+                <b>Плагины:</b> - внешние модули для webpack, которые позволяют управлять и обрабатывать файлы, которые
+                не
+                импортируются в JavaScript.
+            </p>
+        </div>
+        <div class="concept">
+            <h2>Режим:</h2>
+            <p><b>У вебпака есть три режима:</b></p>
+            <ul>
+                <li>development</li>
+                <li>production</li>
+                <li>отсутсвие режима</li>
+            </ul>
+        </div>
+        <div class="bg-image"></div>
+        <div class="test">
+            <h2>Test scss</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus non obcaecati sapiente, dolor magni,
+                accusantium quae qui reiciendis dolorum nulla necessitatibus. Sint eum optio mollitia voluptate porro,
+                eos vel qui.
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
