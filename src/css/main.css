@@ -1,6 +1,10 @@
 @import "~normalize.css";
 @import "fonts.css";
 
+body {
+    background-color: red;
+}
+
 .container {
     max-width: 1140px;
     margin-left: auto;

@@ -25,7 +25,7 @@ module.exports = {
     devServer: {
         port: 9000,
         hot: true,
-        watchFiles: ['src/**/*.html', 'src/**/*.css'],
+        watchFiles: ['src/**/*.html', 'src/**/*.css', 'src/**/*.scss'],
     },
     output: {
         filename: './js/[name].[contenthash].js',
@@ -108,6 +108,16 @@ module.exports = {
             {
                 test: /\.xlsx$/,
                 use: "webpack-xlsx-loader"
+            },
+            {
+                test: /\.m?js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: "babel-loader",
+                    options: {
+                        presets: ['@babel/preset-env']
+                    }
+                }
             }
         ],
     },
